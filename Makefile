@@ -1,0 +1,15 @@
+CXX = /usr/local/bin/g++-15.2.0
+CXXFLAGS = -std=c++20 -fmodules-ts -Wall -g
+EXEC = watopoly
+SOURCES = $(shell cat order.txt)
+OBJECTS = ${SOURCES:.cc=.o}
+
+${EXEC}: ${OBJECTS}
+	${CXX} ${CXXFLAGS} ${OBJECTS} -o ${EXEC}
+
+
+.PHONY: clean
+
+clean:
+	rm ${OBJECTS} ${EXEC}
+
