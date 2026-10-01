@@ -1,3 +1,7 @@
-*/*.o
-gcm.cache/*
+*.o
+gcm.cache/
+.DS_Store
+a.out
+a.out.dSYM/
+watopoly
 
