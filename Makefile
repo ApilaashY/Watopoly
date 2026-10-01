@@ -1,4 +1,4 @@
-CXX = /usr/local/bin/g++-15.2.0
+CXX = /opt/homebrew/bin/g++-15
 CXXFLAGS = -std=c++20 -fmodules-ts -Wall -g
 EXEC = watopoly
 SOURCES = $(shell cat order.txt)
